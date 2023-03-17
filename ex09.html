@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>INF552 - 2022 - PC 09</title>
+        <!-- https://vega.github.io/vega-lite/ -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+        <script type="text/javascript" src="js/d3.v7.min.js"></script>
+        <script type="text/javascript" src="js/ex09.js"></script>
+<style type="text/css">
+#all {
+    width: 1200;
+}
+
+#rightCol {
+    float:right;
+    font-family: sans-serif;
+}
+
+#vega1 {
+    padding-top: 1em;
+}
+
+#vega2 {
+    padding-bottom: .5em;
+}
+
+.country {
+  fill: #EEE;
+  stroke: #BBB;
+  vector-effect: non-scaling-stroke;
+}
+
+.lake {
+  fill: #bcd1f1;
+  stroke: none;
+}
+
+.river {
+  fill: none;
+  stroke: #bcd1f1;
+  vector-effect: non-scaling-stroke;
+}
+
+#footer {
+  font-size:10pt;
+}
+
+#cmds {
+    margin-top:.5em;
+    font-family: sans-serif;
+}
+
+#info {
+    margin-top:1em;
+    height:1em;
+    font-family: monospace;
+}
+
+svg {
+    display: block;
+    border:1px solid #DDD;
+}
+
+</style>
+    </head>
+
+    <body onload="createViz()">
+        <div id="all">
+            <div id="rightCol">
+                <div id="inTheAir"></div>
+                <div id="alt"></div>
+            </div>
+            <div id="main">
+                <div id="vega1" style="position:absolute;left:810px;top:60px"></div>
+                <div id="vega2" style="position:absolute;left:820px;top:60px"></div>
+                
+            </div>
+            <div id="footer">
+                <div id="info"></div>
+                <div id="cmds">Update: <input type="button" value="On" onclick="toggleUpdate();" id="updateBt"/>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
