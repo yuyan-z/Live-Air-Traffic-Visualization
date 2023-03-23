@@ -1,2 +1,4 @@
 # Live-Air-Traffic-Visualization
-The site is avaliable [here](https://live-air-traffic.netlify.app/)
+My course assignment for Data Visualization
+
+The site is avaliable [here](https://live-air-traffic.netlify.app/) deployed on Netfly
